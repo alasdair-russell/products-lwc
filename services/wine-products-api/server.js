@@ -1,0 +1,5 @@
+const express = require('express');
+const app = express();
+app.get('/products', (req, res) => res.json({"products": [{"id": "bordeaux", "label": "Bordeaux"}, {"id": "burgundy", "label": "Burgundy"}, {"id": "champagne", "label": "Champagne"}, {"id": "rioja", "label": "Rioja"}, {"id": "ribera_del_duero", "label": "Ribera del Duero"}, {"id": "tuscany", "label": "Tuscany"}, {"id": "piemonte", "label": "Piemonte"}, {"id": "marlborough", "label": "Marlborough"}, {"id": "napa_valley", "label": "Napa Valley"}, {"id": "barossa_valley", "label": "Barossa Valley"}]}));
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Products API on ${port}`));

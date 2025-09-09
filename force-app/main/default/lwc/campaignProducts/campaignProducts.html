@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Select Products">
+        <div class="slds-p-around_medium">
+            <lightning-dual-listbox
+                name="products"
+                label="Products"
+                source-label="Available"
+                selected-label="Selected"
+                field-level-help="Search and move products to Selected"
+                options={options}
+                value={value}
+                onchange={handleChange}
+                disable-reordering
+                show-bottom-toolbar>
+            </lightning-dual-listbox>
+
+            <div class="slds-m-top_medium slds-grid slds-grid_align-spread">
+                <lightning-button variant="neutral" label="Reset" title="Reset" onclick={handleReset}></lightning-button>
+                <lightning-button variant="brand" label="Save to Campaign" title="Save to Campaign" onclick={handleSave} disabled={saving}></lightning-button>
+            </div>
+
+            <template if:true={message}>
+                <div class="slds-m-top_small">
+                    <lightning-formatted-text value={message}></lightning-formatted-text>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

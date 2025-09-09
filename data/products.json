@@ -5,8 +5,8 @@
       "label": "Bordeaux"
     },
     {
-      "id": "burgoigne",
-      "label": "Burgoigne"
+      "id": "burgundy",
+      "label": "Burgundy"
     },
     {
       "id": "champagne",
@@ -21,8 +21,8 @@
       "label": "Ribera del Duero"
     },
     {
-      "id": "toscana",
-      "label": "Toscana"
+      "id": "tuscany",
+      "label": "Tuscany"
     },
     {
       "id": "piemonte",

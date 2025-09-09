@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+  <fullName>Products__c</fullName>
+  <description>Semicolon delimited list of product IDs selected by LWC</description>
+  <label>Products</label>
+  <length>32768</length>
+  <required>false</required>
+  <trackFeedHistory>false</trackFeedHistory>
+  <trackHistory>false</trackHistory>
+  <type>LongTextArea</type>
+  <visibleLines>3</visibleLines>
+</CustomField>

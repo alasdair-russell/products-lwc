@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types><members>ProductService</members><members>ProductService_Test</members><name>ApexClass</name></types>
+  <types><members>Products__c</members><name>CustomField</name></types>
+  <types><members>Campaign Products</members><name>LightningComponentBundle</name></types>
+  <types><members>Campaign Products Demo</members><name>PermissionSet</name></types>
+  <types><members>ProductsAPI</members><name>NamedCredential</name></types>
+  <version>60.0</version>
+</Package>
