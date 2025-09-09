@@ -1,0 +1,39 @@
+{
+  "segments": [
+    {
+      "id": "seg_vip_wine_buyers",
+      "name": "VIP Wine Buyers",
+      "description": "High LTV customers who purchased wine 3 times in last 90 days"
+    },
+    {
+      "id": "seg_rose_lovers_2024",
+      "name": "Rosé Lovers 2024",
+      "description": "Engaged with rosé content and purchased in last 12 months"
+    },
+    {
+      "id": "seg_champagne_prospects",
+      "name": "Champagne Prospects",
+      "description": "Prospects with high propensity for sparkling"
+    },
+    {
+      "id": "seg_italian_reds",
+      "name": "Italian Reds",
+      "description": "Sangiovese, Nebbiolo, Montepulciano fans"
+    },
+    {
+      "id": "seg_spanish_whites",
+      "name": "Spanish Whites",
+      "description": "Albariño and Verdejo purchasers"
+    },
+    {
+      "id": "seg_lapsed_180",
+      "name": "Lapsed 180",
+      "description": "No purchase in 180 days, win-back"
+    },
+    {
+      "id": "seg_new_signups",
+      "name": "New Signups",
+      "description": "New newsletter subscribers last 30 days"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<template>
+    <lightning-card title="Select Data Cloud Segment">
+        <div class="slds-p-around_medium">
+            <lightning-input type="search" label="Search segments" placeholder="Type to filter..." value={query}
+                onchange={handleSearchInput} oninput={handleSearchInput}></lightning-input>
+            <div class="slds-m-top_small list scroll">
+                <template if:true={loading}>
+                    <lightning-spinner alternative-text="Loading segments"></lightning-spinner>
+                </template>
+                <template if:false={loading}>
+                    <template for:each={filtered} for:item="seg">
+                        <div key={seg.id} class="row slds-grid slds-grid_align-spread">
+                            <div class="slds-truncate">
+                                <lightning-input type="radio" name="segmentPick" label={seg.name} checked={seg.checked}
+                                    data-id={seg.id} data-name={seg.name} onchange={handlePick}>
+                                </lightning-input>
+                                <template if:true={seg.description}>
+                                    <div class="slds-text-body_small slds-text-color_weak slds-m-left_medium">{seg.description}</div>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:true={showTruncationNote}>
+                        <div class="slds-text-color_weak slds-m-top_x-small slds-text-body_small">
+                            Showing first {maxVisible} matches. Refine your search to see more.
+                        </div>
+                    </template>
+                </template>
+            </div>
+            <div class="slds-m-top_medium slds-grid slds-grid_align-spread">
+                <lightning-button variant="neutral" label="Clear" onclick={handleClear}></lightning-button>
+                <lightning-button variant="brand" label="Save to Campaign" onclick={handleSave} disabled={saving}></lightning-button>
+            </div>
+            <template if:true={message}>
+                <div class="slds-m-top_small">
+                    <lightning-formatted-text value={message}></lightning-formatted-text>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
