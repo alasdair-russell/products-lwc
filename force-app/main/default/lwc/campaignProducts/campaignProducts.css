@@ -1,0 +1,3 @@
+.scroll { max-height: 18rem; overflow: auto; }
+.pill-wrap { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.row { padding: 0.125rem 0.25rem; }
