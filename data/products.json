@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "bordeaux",
+      "label": "Bordeaux"
+    },
+    {
+      "id": "burgoigne",
+      "label": "Burgoigne"
+    },
+    {
+      "id": "champagne",
+      "label": "Champagne"
+    },
+    {
+      "id": "rioja",
+      "label": "Rioja"
+    },
+    {
+      "id": "ribera_del_duero",
+      "label": "Ribera del Duero"
+    },
+    {
+      "id": "toscana",
+      "label": "Toscana"
+    },
+    {
+      "id": "piemonte",
+      "label": "Piemonte"
+    },
+    {
+      "id": "marlborough",
+      "label": "Marlborough"
+    },
+    {
+      "id": "napa_valley",
+      "label": "Napa Valley"
+    },
+    {
+      "id": "barossa_valley",
+      "label": "Barossa Valley"
+    }
+  ]
+}
