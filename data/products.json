@@ -1,44 +1,54 @@
 {
   "products": [
-    {
-      "id": "bordeaux",
-      "label": "Bordeaux"
-    },
-    {
-      "id": "burgundy",
-      "label": "Burgundy"
-    },
-    {
-      "id": "champagne",
-      "label": "Champagne"
-    },
-    {
-      "id": "rioja",
-      "label": "Rioja"
-    },
-    {
-      "id": "ribera_del_duero",
-      "label": "Ribera del Duero"
-    },
-    {
-      "id": "tuscany",
-      "label": "Tuscany"
-    },
-    {
-      "id": "piemonte",
-      "label": "Piemonte"
-    },
-    {
-      "id": "marlborough",
-      "label": "Marlborough"
-    },
-    {
-      "id": "napa_valley",
-      "label": "Napa Valley"
-    },
-    {
-      "id": "barossa_valley",
-      "label": "Barossa Valley"
-    }
+    { "id": "champagne-rose-2012", "label": "Rosé Champagne 2012" },
+    { "id": "chablis-chardonnay-2020", "label": "Chablis Chardonnay 2020" },
+    { "id": "sancerre-sauvignon-blanc-2021", "label": "Sancerre Sauvignon Blanc 2021" },
+    { "id": "bordeaux-merlot-2018", "label": "Bordeaux Merlot 2018" },
+    { "id": "bordeaux-cabernet-sauvignon-2016", "label": "Bordeaux Cabernet Sauvignon 2016" },
+    { "id": "bourgogne-pinot-noir-2019", "label": "Bourgogne Pinot Noir 2019" },
+    { "id": "cotes-du-rhone-grenache-2017", "label": "Côtes du Rhône Grenache 2017" },
+    { "id": "chateauneuf-du-pape-grenache-2016", "label": "Châteauneuf du Pape Grenache 2016" },
+    { "id": "provence-rose-2022", "label": "Provence Rosé 2022" },
+    { "id": "alsace-riesling-2020", "label": "Alsace Riesling 2020" },
+    { "id": "beaujolais-gamay-2021", "label": "Beaujolais Gamay 2021" },
+    { "id": "pouilly-fume-sauvignon-blanc-2019", "label": "Pouilly-Fumé Sauvignon Blanc 2019" },
+    { "id": "meursault-chardonnay-2015", "label": "Meursault Chardonnay 2015" },
+    { "id": "barolo-nebbiolo-2013", "label": "Barolo Nebbiolo 2013" },
+    { "id": "barbaresco-nebbiolo-2014", "label": "Barbaresco Nebbiolo 2014" },
+    { "id": "chianti-classico-sangiovese-2018", "label": "Chianti Classico Sangiovese 2018" },
+    { "id": "brunello-di-montalcino-sangiovese-2015", "label": "Brunello di Montalcino Sangiovese 2015" },
+    { "id": "soave-garganega-2021", "label": "Soave Garganega 2021" },
+    { "id": "valpolicella-ripasso-corvina-2017", "label": "Valpolicella Ripasso Corvina 2017" },
+    { "id": "amarone-della-valpolicella-corvina-2012", "label": "Amarone della Valpolicella Corvina 2012" },
+    { "id": "etna-rosso-nerello-mascalese-2019", "label": "Etna Rosso Nerello Mascalese 2019" },
+    { "id": "montepulciano-d-abruzzo-2018", "label": "Montepulciano d'Abruzzo 2018" },
+    { "id": "verdicchio-dei-castelli-di-jesi-2020", "label": "Verdicchio dei Castelli di Jesi 2020" },
+    { "id": "friuli-pinot-grigio-2021", "label": "Friuli Pinot Grigio 2021" },
+    { "id": "rioja-tempranillo-2015", "label": "Rioja Tempranillo 2015" },
+    { "id": "ribera-del-duero-tempranillo-2016", "label": "Ribera del Duero Tempranillo 2016" },
+    { "id": "priorat-garnacha-2014", "label": "Priorat Garnacha 2014" },
+    { "id": "rias-baixas-albarino-2021", "label": "Rías Baixas Albariño 2021" },
+    { "id": "toro-tinta-de-toro-2017", "label": "Toro Tinta de Toro 2017" },
+    { "id": "bierzo-mencia-2018", "label": "Bierzo Mencía 2018" },
+    { "id": "cava-macabeo-2019", "label": "Cava Macabeo 2019" },
+    { "id": "navarra-garnacha-rosado-2022", "label": "Navarra Garnacha Rosado 2022" },
+    { "id": "douro-touriga-nacional-2016", "label": "Douro Touriga Nacional 2016" },
+    { "id": "dao-jaen-2017", "label": "Dão Jaen 2017" },
+    { "id": "alentejo-aragonez-2018", "label": "Alentejo Aragonez 2018" },
+    { "id": "vinho-verde-loureiro-2021", "label": "Vinho Verde Loureiro 2021" },
+    { "id": "madeira-sercial-2008", "label": "Madeira Sercial 2008" },
+    { "id": "mosel-riesling-kabinett-2020", "label": "Mosel Riesling Kabinett 2020" },
+    { "id": "rheingau-riesling-trocken-2019", "label": "Rheingau Riesling Trocken 2019" },
+    { "id": "pfalz-spaetburgunder-2018", "label": "Pfalz Spätburgunder 2018" },
+    { "id": "wachau-gruner-veltliner-2021", "label": "Wachau Grüner Veltliner 2021" },
+    { "id": "burgenland-blaufrankisch-2017", "label": "Burgenland Blaufränkisch 2017" },
+    { "id": "santorini-assyrtiko-2020", "label": "Santorini Assyrtiko 2020" },
+    { "id": "naoussa-xinomavro-2016", "label": "Naoussa Xinomavro 2016" },
+    { "id": "nemea-agiorgitiko-2017", "label": "Nemea Agiorgitiko 2017" },
+    { "id": "tokaji-aszu-5-puttonyos-2013", "label": "Tokaji Aszú 5 Puttonyos 2013" },
+    { "id": "sussex-sparkling-brut-2018", "label": "Sussex Sparkling Brut 2018" },
+    { "id": "valais-pinot-noir-2019", "label": "Valais Pinot Noir 2019" },
+    { "id": "goriska-brda-rebula-2020", "label": "Goriška Brda Rebula 2020" },
+    { "id": "istria-malvazija-2020", "label": "Istria Malvazija 2020" }
   ]
 }
