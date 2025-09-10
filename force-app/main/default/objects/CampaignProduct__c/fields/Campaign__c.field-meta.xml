@@ -2,12 +2,11 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
   <fullName>Campaign__c</fullName>
   <description>Parent Campaign</description>
-  <externalId>false</externalId>
   <label>Campaign</label>
   <referenceTo>Campaign</referenceTo>
   <relationshipLabel>Campaign Products</relationshipLabel>
   <relationshipName>CampaignProducts</relationshipName>
+  <deleteConstraint>Cascade</deleteConstraint>
   <required>true</required>
-  <trackHistory>false</trackHistory>
   <type>Lookup</type>
 </CustomField>
