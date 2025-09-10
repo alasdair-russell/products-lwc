@@ -6,22 +6,35 @@
     <enabled>true</enabled>
   </classAccesses>
   <classAccesses>
-    <apexClass>SegmentService</apexClass>
+    <apexClass>ProductLinkService</apexClass>
     <enabled>true</enabled>
   </classAccesses>
+  <objectPermissions>
+    <allowCreate>true</allowCreate>
+    <allowDelete>true</allowDelete>
+    <allowEdit>true</allowEdit>
+    <allowRead>true</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <object>CampaignProduct__c</object>
+    <viewAllRecords>false</viewAllRecords>
+  </objectPermissions>
+  <objectPermissions>
+    <allowCreate>true</allowCreate>
+    <allowDelete>false</allowDelete>
+    <allowEdit>true</allowEdit>
+    <allowRead>true</allowRead>
+    <modifyAllRecords>false</modifyAllRecords>
+    <object>Product2</object>
+    <viewAllRecords>false</viewAllRecords>
+  </objectPermissions>
   <fieldPermissions>
     <editable>true</editable>
-    <field>Campaign.Products__c</field>
+    <field>CampaignProduct__c.Campaign__c</field>
     <readable>true</readable>
   </fieldPermissions>
   <fieldPermissions>
     <editable>true</editable>
-    <field>Campaign.DataCloud_Segment_Id__c</field>
-    <readable>true</readable>
-  </fieldPermissions>
-  <fieldPermissions>
-    <editable>true</editable>
-    <field>Campaign.DataCloud_Segment_Name__c</field>
+    <field>CampaignProduct__c.Product__c</field>
     <readable>true</readable>
   </fieldPermissions>
   <hasActivationRequired>false</hasActivationRequired>
