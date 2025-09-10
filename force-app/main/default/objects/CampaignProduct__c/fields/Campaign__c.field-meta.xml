@@ -6,7 +6,7 @@
   <referenceTo>Campaign</referenceTo>
   <relationshipLabel>Campaign Products</relationshipLabel>
   <relationshipName>CampaignProducts</relationshipName>
-  <deleteConstraint>Cascade</deleteConstraint>
+  <deleteConstraint>Restrict</deleteConstraint>
   <required>true</required>
   <type>Lookup</type>
 </CustomField>
