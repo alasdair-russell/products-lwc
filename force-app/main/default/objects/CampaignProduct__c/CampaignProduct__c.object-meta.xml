@@ -17,4 +17,12 @@
     <displayFormat>CP-{0000}</displayFormat>
   </nameField>
   <sharingModel>ReadWrite</sharingModel>
+  <validationRules>
+    <fullName>Require_Product</fullName>
+    <active>true</active>
+    <description>Require Product__c to be filled</description>
+    <errorConditionFormula>ISBLANK(Product__c)</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>Product is required.</errorMessage>
+  </validationRules>
 </CustomObject>
