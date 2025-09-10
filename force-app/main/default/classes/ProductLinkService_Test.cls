@@ -19,10 +19,12 @@ private class ProductLinkService_Test {
         ProductLinkService.syncSelectedProducts(c.Id, new List<String>{'bordeaux','rioja','tuscany'});
         Test.stopTest();
 
-        Map<String, Product2> byCode = new Map<String, Product2>([SELECT Id, ProductCode FROM Product2 WHERE ProductCode IN ('bordeaux','rioja','tuscany')]);
+        Map<String, Product2> byCode = new Map<String, Product2>(
+            [SELECT Id, ProductCode FROM Product2 WHERE ProductCode IN ('bordeaux','rioja','tuscany')]);
         System.assertEquals(3, byCode.size());
 
-        List<CampaignProduct__c> links = [SELECT Id, Campaign__c, Product__r.ProductCode FROM CampaignProduct__c WHERE Campaign__c = :c.Id];
+        List<CampaignProduct__c> links = [
+            SELECT Id, Campaign__c, Product__r.ProductCode FROM CampaignProduct__c WHERE Campaign__c = :c.Id];
         System.assertEquals(3, links.size());
     }
 

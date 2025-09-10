@@ -1,10 +1,13 @@
 public with sharing class ProductLinkService {
-    public class ProductDTO { @AuraEnabled public String id; @AuraEnabled public String label; }
 
     @AuraEnabled(cacheable=true)
     public static List<String> getSelectedProductCodes(Id campaignId) {
         if (campaignId == null) return new List<String>();
-        List<CampaignProduct__c> links = [SELECT Id, Product__r.ProductCode FROM CampaignProduct__c WHERE Campaign__c = :campaignId];
+        List<CampaignProduct__c> links = [
+            SELECT Id, Product__r.ProductCode
+            FROM CampaignProduct__c
+            WHERE Campaign__c = :campaignId
+        ];
         List<String> out = new List<String>();
         for (CampaignProduct__c l : links) {
             if (l.Product__r != null) out.add(l.Product__r.ProductCode);
@@ -18,7 +21,11 @@ public with sharing class ProductLinkService {
         if (selectedCodes == null) selectedCodes = new List<String>();
         while (selectedCodes.size() > 3) selectedCodes.remove(3);
 
-        List<CampaignProduct__c> existing = [SELECT Id, Product__c, Product__r.ProductCode FROM CampaignProduct__c WHERE Campaign__c = :campaignId];
+        List<CampaignProduct__c> existing = [
+            SELECT Id, Product__c, Product__r.ProductCode
+            FROM CampaignProduct__c
+            WHERE Campaign__c = :campaignId
+        ];
         Map<String, CampaignProduct__c> existingByCode = new Map<String, CampaignProduct__c>();
         for (CampaignProduct__c cp : existing) {
             if (cp.Product__r != null) existingByCode.put(cp.Product__r.ProductCode, cp);
@@ -32,11 +39,13 @@ public with sharing class ProductLinkService {
             }
         }
 
+        // Build id->label map from ProductService JSON for new products
         Map<String, String> labelById = new Map<String, String>();
         try {
-            List<ProductLinkService.ProductDTO> fromJson = ProductService.getProducts();
-            for (ProductLinkService.ProductDTO d : fromJson) labelById.put(d.id, d.label);
+            List<ProductService.ProductDTO> fromJson = ProductService.getProducts();
+            for (ProductService.ProductDTO d : fromJson) labelById.put(d.id, d.label);
         } catch (Exception e) {
+            // proceed even if external list is unavailable
         }
 
         List<Product2> toInsertProducts = new List<Product2>();

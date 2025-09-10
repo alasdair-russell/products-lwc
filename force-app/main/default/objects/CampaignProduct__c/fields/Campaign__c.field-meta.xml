@@ -4,17 +4,6 @@
   <description>Parent Campaign</description>
   <externalId>false</externalId>
   <label>Campaign</label>
-  <lookupFilter>
-    <active>true</active>
-    <booleanFilter>1</booleanFilter>
-    <errorMessage>Must reference a Campaign</errorMessage>
-    <filterItems>
-      <field>Id</field>
-      <operation>notEqual</operation>
-      <value>null</value>
-    </filterItems>
-    <isOptional>true</isOptional>
-  </lookupFilter>
   <referenceTo>Campaign</referenceTo>
   <relationshipLabel>Campaign Products</relationshipLabel>
   <relationshipName>CampaignProducts</relationshipName>

@@ -17,4 +17,5 @@
     <type>AutoNumber</type>
     <displayFormat>CP-{0000}</displayFormat>
   </nameField>
+  <sharingModel>ReadWrite</sharingModel>
 </CustomObject>
