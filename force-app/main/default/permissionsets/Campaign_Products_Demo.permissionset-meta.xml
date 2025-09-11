@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
   <label>Campaign Products Demo</label>
+
   <classAccesses>
     <apexClass>ProductService</apexClass>
+    <enabled>true</enabled>
+  </classAccesses>
+  <classAccesses>
+    <apexClass>SegmentService</apexClass>
     <enabled>true</enabled>
   </classAccesses>
   <classAccesses>
     <apexClass>ProductLinkService</apexClass>
     <enabled>true</enabled>
   </classAccesses>
+
   <objectPermissions>
     <allowCreate>true</allowCreate>
     <allowDelete>true</allowDelete>
@@ -27,5 +33,12 @@
     <object>Product2</object>
     <viewAllRecords>false</viewAllRecords>
   </objectPermissions>
+
+  <fieldPermissions>
+    <editable>true</editable>
+    <field>CampaignProduct__c.Product__c</field>
+    <readable>true</readable>
+  </fieldPermissions>
+
   <hasActivationRequired>false</hasActivationRequired>
 </PermissionSet>
