@@ -27,15 +27,5 @@
     <object>Product2</object>
     <viewAllRecords>false</viewAllRecords>
   </objectPermissions>
-  <fieldPermissions>
-    <editable>true</editable>
-    <field>CampaignProduct__c.Campaign__c</field>
-    <readable>true</readable>
-  </fieldPermissions>
-  <fieldPermissions>
-    <editable>true</editable>
-    <field>CampaignProduct__c.Product__c</field>
-    <readable>true</readable>
-  </fieldPermissions>
   <hasActivationRequired>false</hasActivationRequired>
 </PermissionSet>
